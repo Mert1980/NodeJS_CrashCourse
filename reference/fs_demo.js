@@ -2,11 +2,11 @@ const fs = require("fs");
 const path = require("path");
 
 //Create folder
-fs.mkdir(path.join(__dirname, "/test"), {}, err => {
-  //by default "fs.mkdir" is async
-  if (err) throw err;
-  console.log("Folder created...");
-});
+// fs.mkdir(path.join(__dirname, "/test"), {}, err => {
+//   //by default "fs.mkdir" is async
+//   if (err) throw err;
+//   console.log("Folder created...");
+// });
 
 //Create and write to a file
 fs.writeFile(
@@ -15,5 +15,14 @@ fs.writeFile(
   err => {
     if (err) throw err;
     console.log("File written to...");
+    // Append a file
+    fs.appendFile( // this is a callback function
+      path.join(__dirname, "/test", "hello.txt"),
+      " I love Node JS",
+      err => {
+        if (err) throw err;
+        console.log("File written to...");
+      }
+    );
   }
 );
