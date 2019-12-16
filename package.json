@@ -1,0 +1,31 @@
+{
+  "name": "nodejs_crashcourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mert1980/NodeJS_CrashCourse.git"
+  },
+  "keywords": [
+    "Note",
+    "JS",
+    "Crash",
+    "Course"
+  ],
+  "author": "Mert Demirok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mert1980/NodeJS_CrashCourse/issues"
+  },
+  "homepage": "https://github.com/Mert1980/NodeJS_CrashCourse#readme",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
