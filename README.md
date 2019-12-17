@@ -3,8 +3,8 @@ In this crash course I explored Node.js fundamentals including modules such as p
 
 # Quick Start
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Serve on localhost:5000
+### Serve on localhost:5000
 npm start
